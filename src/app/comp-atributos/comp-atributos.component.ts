@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class CompAtributosComponent {
 
   estilo:string = "disable";
+  corFundo:string = "red";
+  corDaFonte:string = "white";
 
   trocar(){
     if(this.estilo === "disable"){
