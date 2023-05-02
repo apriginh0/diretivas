@@ -3,3 +3,15 @@
 <!-- ngClass, usando para dar estilo de forma dinamica -->
 <h1 [ngStyle]="{'background':corFundo, 'color':corDaFonte}">CURSO ANGULAR</h1>
 <!-- ngStyle, mudando algumas propriedade, fazendo o binding de variáveis -->
+
+<h2>Lista de Compras</h2>
+<p>Adicione um item</p>
+<input type="text" [(ngModel)]="item">
+<button (click)="adicionarLista()">ADICIONAR</button>
+<p>{{ item }}</p>
+
+<ul>
+   <li *ngFor="let elemento of lista">{{ elemento }}</li>
+</ul>
+<!-- ngModel, interação entre html e parte lógica, ou seja, o usuário e o código -->
+<hr>

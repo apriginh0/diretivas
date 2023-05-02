@@ -10,6 +10,12 @@ export class CompAtributosComponent {
   estilo:string = "disable";
   corFundo:string = "red";
   corDaFonte:string = "white";
+  item:string = "";
+  lista:string[] = [];
+
+  adicionarLista(){
+    this.lista.push(this.item);
+  }
 
   trocar(){
     if(this.estilo === "disable"){
