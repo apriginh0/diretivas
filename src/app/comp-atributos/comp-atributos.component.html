@@ -15,3 +15,15 @@
 </ul>
 <!-- ngModel, interação entre html e parte lógica, ou seja, o usuário e o código -->
 <hr>
+
+<ng-template [ngIf]="true">
+   <a href="#">Finalizar Compra</a>
+</ng-template>
+<!-- ng-template, é um modelo e só vai renderizar quando forem atendidas as condições para que ele seja verdadeiros -->
+
+<hr>
+
+<ng-content select="h2"></ng-content>
+<!-- ng-content está renderizando conteúdo que está inativo no componente pai(app-comp-atributos), dentro do arqui principal(app.component.html) -->
+<p>Paragrafo fixo</p>
+<ng-content select="p"></ng-content>
