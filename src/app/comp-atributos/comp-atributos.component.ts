@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class CompAtributosComponent {
 
+  estilo:string = "disable";
+
+  trocar(){
+    if(this.estilo === "disable"){
+      this.estilo = "enable"
+    } else {
+      this.estilo = "disable"
+    }
+  }
+
 }
